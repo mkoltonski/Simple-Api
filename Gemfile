@@ -30,7 +30,10 @@ group :development, :test do
   gem 'byebug', platform: :mri
   gem 'rspec-rails', '~> 3.5'
   gem 'nodejs-rails', '~> 0.0.1'
-  gem 'rubocop-faker'
+  gem 'rubocop-rails'
+  gem 'rubocop-rspec'
+  gem 'rubocop-require_tools', '~> 0.1.2'
+  gem 'rubocop-performance'
 end
 
 group :development do
