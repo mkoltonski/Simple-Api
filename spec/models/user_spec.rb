@@ -5,5 +5,5 @@ RSpec.describe User, type: :model do
   it { should have_many(:todos) }
   it { should validate_presence_of(:name) }
   it { should validate_presence_of(:email) }
-  it { sohuld validate_presence_of(:password_digest) }
+  it { should validate_presence_of(:password_digest) }
 end
