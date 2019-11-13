@@ -34,7 +34,8 @@ group :development, :test do
   gem 'rubocop-rspec'
   gem 'rubocop-require_tools', '~> 0.1.2'
   gem 'rubocop-performance'
-  gem 'bcrypt', '~> 3.1'
+  gem 'bcrypt', '~> 3.1.7'
+  gem 'jwt'
 end
 
 group :development do
