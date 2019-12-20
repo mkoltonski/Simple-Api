@@ -5,7 +5,7 @@ RSpec.describe AuthorizeApiRequest do
 
   let(:user) { create(:user) }
 
-  ler(:header) { { 'Authorization' => token_generator(user.id) } }
+  let(:header) { { 'Authorization' => token_generator(user.id) } }
 
   subject (:invalid_request_obj) {described_class.new({}) }
 
