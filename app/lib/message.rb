@@ -7,7 +7,7 @@ class Message
     'Invalid credentials'
   end
 
-  def selfd.invalid_token
+  def self.invalid_token
     'Invalid token'
   end
 

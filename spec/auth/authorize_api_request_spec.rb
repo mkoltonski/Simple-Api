@@ -35,7 +35,7 @@ RSpec.describe AuthorizeApiRequest do
 
         it 'raises an InvalidToken error' do
           expect { invalid_request_obj.call }
-            .to raise_error(ExceptionHandler::InvalidToken, /Invalid Token/)
+            .to raise_error(ExceptionHandler::InvalidToken, /Invalid token/)
           end
         end
 
@@ -44,7 +44,7 @@ RSpec.describe AuthorizeApiRequest do
 	  subject(:request_obj) { described_class.new(header) }
 
 	  it 'raises ExceptionHandler::ExpiredSignature error' do
-	    expect { request_obj.call } 
+	    expect { request_obj.call }
 	      .to raise_error(
 		ExceptionHandler::InvalidToken,
 		/Signature has expired/

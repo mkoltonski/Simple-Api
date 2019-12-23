@@ -5,7 +5,7 @@ class JsonWebToken
   def self.encode(playload, exp = 24.hours.from_now)
     playload[:exp] = exp.to_i
 
-    JWT.encode(payload, HMAC_SECRET)
+    JWT.encode(playload, HMAC_SECRET)
   end
 
   def self.decode(token)
